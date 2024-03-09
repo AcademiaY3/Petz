@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AdoptionProducer
+Bundle-SymbolicName: AdoptionProducer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: adoptionproducer.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-19
+Automatic-Module-Name: AdoptionProducer
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
