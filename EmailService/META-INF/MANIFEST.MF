@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EmailService
+Bundle-SymbolicName: EmailService
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: emailservice.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-19
+Automatic-Module-Name: EmailService
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
