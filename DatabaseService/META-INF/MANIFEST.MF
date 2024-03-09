@@ -3,6 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: DbConnection
 Bundle-SymbolicName: DatabaseService
 Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: ., lib/mysql-connector-j-8.0.32.jar
 Bundle-Activator: dbconnection.Activator
 Bundle-RequiredExecutionEnvironment: JavaSE-19
 Automatic-Module-Name: DbConnection
