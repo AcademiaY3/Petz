@@ -3,6 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: EmailService
 Bundle-SymbolicName: EmailService
 Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: ., lib/javax.mail-api-1.6.2.jar
 Bundle-Activator: emailservice.Activator
 Bundle-RequiredExecutionEnvironment: JavaSE-19
 Automatic-Module-Name: EmailService
