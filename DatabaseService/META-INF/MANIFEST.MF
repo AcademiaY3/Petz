@@ -9,3 +9,5 @@ Bundle-RequiredExecutionEnvironment: JavaSE-19
 Automatic-Module-Name: DbConnection
 Import-Package: org.osgi.framework;version="1.3.0"
 Bundle-ActivationPolicy: lazy
+Export-Package: dbconnection.service,
+ dbconnection.serviceimpl
