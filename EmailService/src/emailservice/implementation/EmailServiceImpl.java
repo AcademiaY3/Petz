@@ -11,11 +11,11 @@ import emailservice.service.EmailService;
 public class EmailServiceImpl implements EmailService {
 
 	@Override
-	public String sendEmail() {
-		String recipient = "qwwerrrty11@gmail.com";
+	public String sendEmail(String email,String content) {
+		String recipient = email;
         String sender = "qwwerrrty11@gmail.com";
-        String subject = "Your Subject";
-        String body = "Your email body";
+        String subject = "NewsLetter Petz";
+        String body = content;
         HttpURLConnection http = null;
         
         try {

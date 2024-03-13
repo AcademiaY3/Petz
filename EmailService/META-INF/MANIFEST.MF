@@ -8,4 +8,5 @@ Bundle-Activator: emailservice.Activator
 Bundle-RequiredExecutionEnvironment: JavaSE-19
 Automatic-Module-Name: EmailService
 Import-Package: org.osgi.framework;version="1.3.0"
+Export-Package: emailservice.service,emailservice.implementation
 Bundle-ActivationPolicy: lazy

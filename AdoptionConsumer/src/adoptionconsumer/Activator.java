@@ -2,6 +2,8 @@ package adoptionconsumer;
 
 import java.util.Scanner;
 
+
+
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
