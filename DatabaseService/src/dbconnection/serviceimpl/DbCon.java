@@ -7,7 +7,7 @@ import dbconnection.service.IDbCon;
 public class DbCon implements IDbCon {
 	private static final String DB_URL = "jdbc:mysql://localhost:3306/petz";
 	private static final String USER = "root";
-	private static final String PASSWORD = "root";
+	private static final String PASSWORD = "";
 	private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 	private Connection connection;
 
