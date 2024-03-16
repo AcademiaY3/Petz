@@ -6,5 +6,6 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: newsletterproducer.Activator
 Bundle-RequiredExecutionEnvironment: JavaSE-19
 Automatic-Module-Name: NewsLetterProducer
-Import-Package: org.osgi.framework;version="1.3.0"
+Import-Package: org.osgi.framework;version="1.3.0",dbconnection.service,dbconnection.serviceimpl,emailservice.service,emailservice.implementation,smsservice.service,smsservice.implemention
+Export-Package: newsletterproducer.service
 Bundle-ActivationPolicy: lazy

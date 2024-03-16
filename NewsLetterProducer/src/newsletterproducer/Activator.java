@@ -1,22 +1,26 @@
 package newsletterproducer;
 
 import org.osgi.framework.BundleActivator;
+
 import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
+
+import newsletterproducer.impl.NewsLetterImpl;
+import newsletterproducer.service.NewLetterService;
+
 
 public class Activator implements BundleActivator {
 
-	private static BundleContext context;
-
-	static BundleContext getContext() {
-		return context;
-	}
-
+	ServiceRegistration registration=null;
 	public void start(BundleContext bundleContext) throws Exception {
-		Activator.context = bundleContext;
+		System.out.println("NewsLetter Service Started");
+		NewLetterService newsLetterService=new NewsLetterImpl();
+		registration= bundleContext.registerService(NewLetterService.class.getName(),newsLetterService, null);
 	}
 
 	public void stop(BundleContext bundleContext) throws Exception {
-		Activator.context = null;
+		System.out.println("NewsLetter Service Stopped");
+		registration.unregister();
 	}
 
 }

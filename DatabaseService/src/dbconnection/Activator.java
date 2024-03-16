@@ -13,7 +13,7 @@ public class Activator implements BundleActivator {
 	private ServiceRegistration<?> databaseConnectionService;
 
 	public void start(BundleContext context) throws Exception {
-		System.out.println(ANSI_YELLOW + "Starting DB Connection" + ANSI_RESET);
+		System.out.println("Starting DB Connection");
 
 		DbCon databaseConnection = new DbCon();
 		databaseConnectionService = context.registerService(IDbCon.class.getName(), databaseConnection, null);
@@ -21,7 +21,7 @@ public class Activator implements BundleActivator {
 	}
 
 	public void stop(BundleContext context) throws Exception {
-		System.out.println(ANSI_YELLOW + "Stoping DB Connection" + ANSI_RESET);
+		System.out.println("Stoping DB Connection");
 		if (databaseConnectionService != null) {
 			databaseConnectionService.unregister();
 			databaseConnectionService = null;
