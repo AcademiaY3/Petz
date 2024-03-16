@@ -10,17 +10,16 @@ import smsservice.service.SmsService;
 public class SmsServiceImpl implements SmsService{
 
 	@Override
-	public String SendSms() {
-		String mobile = "0785879771";
-		String message = "hello";
-		
+	public String SendSms(String number,String content) {
+		String mobile = number;
+		String message = content;
 		
 		try {
 			URL url = new URL("https://sms.send.lk/api/v3/sms/send");
 			HttpURLConnection http = (HttpURLConnection)url.openConnection();
 			http.setRequestMethod("POST");
 			http.setDoOutput(true);
-			http.setRequestProperty("Authorization", "Bearer API_KEY_HERE");
+			http.setRequestProperty("Authorization", "Bearer ");
 			http.setRequestProperty("Content-Type", "application/json");
 
 			String data = "{\"recipient\": \""+mobile+"\" , \"sender_id\" : \"SendTest\" , \"message\":\""+message+"\"}";
